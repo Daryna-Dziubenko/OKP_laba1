@@ -174,6 +174,17 @@ img {
     font-style: normal;
 }
 
+.why-us-title_2{
+    position: sticky;
+    top: 0;
+    background: #F5F5F5;
+    padding: 10px 20px;
+    z-index: 10;
+    font-family: 'Rubik Bubbles', sans-serif; 
+    text-align: center;
+    font-size: 36px;
+}
+
 .why-us-title,
 .linkToUs {
     font-family: 'Rubik Bubbles', sans-serif; 
@@ -370,7 +381,7 @@ summary:hover {
 
 .mission-description:hover {
     background-color: #f39c12;
-    color: white;
+    color: #222;
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
@@ -382,6 +393,38 @@ summary:hover {
     top: -23px;
     right: -23px;
     transition: top 0.3s, right 0.3s;
+}
+
+.mission-description-container {
+    width: 100%;
+}
+
+.mission-description {
+    width: 48%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.cta-banner {
+    clear: both;
+    text-align: center;
+    margin-top: 20px;
+
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.clear {
+    clear: both;
 }
 
 .cta-banner {
@@ -410,9 +453,39 @@ summary:hover {
     margin-bottom: -35px;
 }
 
+.cta-button:link {
+    color: white; 
+}
+
+.cta-button:visited {
+    color: #222; 
+}
+
 .cta-button:hover {
-    background-color: #183D2F;
+    background-color: #183D2F; 
     color: white;
+    transition: 0.3s;
+}
+
+.cta-button:active {
+    background-color: #f39c12;
+}
+
+.mission-description:first-child {
+    font-weight: bold; 
+    color: #222;
+}
+
+.why-us-title::before {
+    content: "🚀 ";
+    color: #f39c12;
+    font-size: 1.2em;
+}
+
+.why-us-title::after {
+    content: " 🌟";
+    color: #f39c12;
+    font-size: 1.2em;
 }
 
 /**/

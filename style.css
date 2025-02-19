@@ -44,6 +44,30 @@ p{
     margin-bottom: 25px;
 }
 
+.about-list dt {
+    font-weight: bold;
+    color: #141618;
+    margin-top: 10px;
+    text-align: left;
+}
+.why-list {
+    list-style-type: decimal;
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+.why-list li {
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.about-list dd {
+    margin: 0 0 10px 20px;
+    font-size: 16px;
+    color: #222;
+    text-align: left;
+}
+
 .menu {
     list-style: none;
     padding: 0;
@@ -476,16 +500,58 @@ summary:hover {
     color: #222;
 }
 
-.why-us-title::before {
+.why-us-title_roket:before {
     content: "🚀 ";
     color: #f39c12;
     font-size: 1.2em;
 }
 
-.why-us-title::after {
+.why-us-title_roket:after {
     content: " 🌟";
     color: #f39c12;
     font-size: 1.2em;
+}
+
+
+.course-table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+.course-table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+.course-img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: auto;
+}
+
+.course-link {
+    display: inline-block;
+    font-size: 16px;
+    color: #183D2F;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.course-link:hover {
+    color: #e67e22;
+    text-decoration: underline;
+}
+
+.course-desc {
+    font-size: 14px;
+    color: #555;
+    padding: 10px;
 }
 
 /**/

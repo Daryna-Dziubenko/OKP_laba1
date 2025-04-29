@@ -6,14 +6,16 @@
     <meta name="author" content="Dziubenko-Daryna">
     <link rel="stylesheet" href="style.css">
     <title>CodeKids</title>
-    <style>
-        body {
-            background-color: #F5F5F5;
-            background-size: cover;
-        }
-    </style>
 </head>
 <body>
+    <button onclick="showPrompt()">Додати ім'я</button>
+    <button onclick="dialogPass()">Додати пароль</button>
+    <button onclick="showDeveloperInfo('Дзюбенко', 'Дарина')">Про розробника</button>
+    <button onclick="twoStr()">Порівняння рядків</button>
+    <button onclick="changeBg()">Змінити фон</button>
+    <button onclick="goTo()">Перейти на сайт</button>
+    <button onclick="writeToDoc()">document.write</button>
+    <button onclick="insertNode()">Вставити вузли</button>
     <div class="container">
         <nav>
             <ul class="menu">
@@ -106,5 +108,6 @@
         </section>
         <p class="linkToUs"><a href="about-us.html#history" style="color: green;" class="custom-link">Тут</a> ти можеш дізнатись про нас більше</p>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

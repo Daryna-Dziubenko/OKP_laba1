@@ -70,7 +70,47 @@
             <div class="clear"></div>
         </section>
         
-        <section id="team">
+
+            <section class="demo-events">
+            <h2>Демонстрація подій JS</h2>
+
+            <button id="event-demo-btn"
+                    onclick="handlerByAttribute()">
+                Натисни мене
+            </button>
+        </section>
+
+        <section>
+            <h2>Наші викладачі</h2>
+            <ul class="teacher-list" id="teacher-list">
+                <li class="teacher">Іван Петренко</li>
+                <li class="teacher">Марина Коваленко</li>
+                <li class="teacher">Олександр Бондар</li>
+                <li class="teacher">Анна Мельник</li>
+            </ul>
+        </section>
+
+        
+        <section>
+            <h2>Меню дій</h2>
+            <div class="action-menu">
+                <button onclick="sayWelcome()">👋 Привітатись</button>
+                <button id="opportunities">Дізнатися про можливості</button>
+                <button id="multiBtn">ℹ️ Про школу</button>
+                <button id="objBtn">💻 Про курси</button>
+            </div>
+        </section>
+
+        <textarea id="notes" rows="4" placeholder="Напишіть замітку…"></textarea>
+        <section>
+            <div id="menu-saved">
+                <button data-action="save">Зберегти нотатку</button>
+                <button data-action="search">Пошук викладача</button>
+            </div>
+        </section>
+        
+
+        <section id="team" >
             <h2 class="why-us-title_2">Команда викладачів</h2>
         
             <div class="teacher">

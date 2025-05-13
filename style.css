@@ -840,3 +840,135 @@ button:hover {
 button:active {
     background-color: #367c39;
 }
+
+.new-button{
+    text-align: center;
+}
+
+.player-button{
+    text-align: center;
+}
+
+.hint{
+    text-align: center;
+}
+
+.interactive-panel{
+    text-align: center;
+}
+
+.add-testimonial {
+    margin: 20px auto;
+    display: block;
+    font-size: 1.1em;
+    padding: 10px 20px;
+}
+
+.delete-btn {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 0.9em;
+    transition: background 0.3s;
+}
+
+.delete-btn:hover {
+    background: #c0392b;
+}
+
+.testimonial {
+    position: relative;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.testimonial.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+.testimonial.fade-out {
+    animation: fadeOut 0.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; transform: translateY(0); }
+    to { opacity: 0; transform: translateY(-20px); }
+}
+
+.action-menu {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.teacher-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.teacher {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 10px;
+    transition: background 0.3s;
+    cursor: pointer;
+}
+
+.teacher.highlighted {
+    background: #baffc9; /* Зелений з палітри colors */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.teacher.highlighted{
+    background:#ffeaa7;
+    transition:background-color .3s ease;
+}
+.teacher-list{
+    list-style:none;
+    padding:0;
+    text-align:center;
+}
+.teacher{
+    padding:8px 12px;
+    margin:4px 0;
+    border-radius:6px;
+    transition:background .2s;
+}
+.teacher.highlighted{background:#ffe082}
+
+/* спливаючі повідомлення */
+.floating-msg{
+    position:fixed;
+    top:16px;left:50%;
+    transform:translateX(-50%);
+    background:#fff;
+    padding:12px 24px;
+    border-radius:30px;
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+    font-weight:600;
+    z-index:999;
+}
+
+.hint{font-size:.85rem;color:#666;text-align:center}
+.floating-message{
+    position:fixed;top:16px;left:50%;transform:translateX(-50%);
+    background:#fff;padding:10px 22px;border-radius:24px;
+    box-shadow:0 4px 12px rgba(0,0,0,.2);font-weight:600;z-index:9999
+}
+.teacher.highlighted{background:#ffe082}
+#preview-wrap{margin:10px 0;}

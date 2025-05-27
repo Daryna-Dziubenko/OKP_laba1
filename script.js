@@ -257,6 +257,28 @@ function addTestimonial() {
     }
 }
 
+document.querySelector('.testimonials')
+        .addEventListener('click', e => {
+    const btn = e.target.closest('[data-action="deleteTestimonial"]');
+    if (!btn) return;                           
+
+    const id = btn.dataset.testimonialId;       
+    deleteTestimonial(id);                      
+});
+
+function deleteTestimonial(id) {
+    if (!confirm('Ви впевнені, що хочете видалити цей відгук?')) return;
+
+    const el = document.querySelector(`[data-testimonial-id="${id}"]`);
+    if (el) el.classList.add('fade-out');        
+
+    setTimeout(() => {
+        testimonials = testimonials.filter(t => t.id !== +id); 
+        saveTestimonials();          
+        renderTestimonials();        
+        showFloatingMessage('Відгук видалено! 🗑️');
+    }, 500);
+}
 function deleteTestimonial(id) {
     if (confirm('Ви впевнені, що хочете видалити цей відгук?')) {
         const testimonialElement = document.querySelector(`.testimonial[data-testimonial-id="${id}"]`);
@@ -361,3 +383,4 @@ document.addEventListener('DOMContentLoaded', () => {
         if (methods[act]) methods[act]();
     });
 });
+

@@ -972,3 +972,17 @@ button:active {
 }
 .teacher.highlighted{background:#ffe082}
 #preview-wrap{margin:10px 0;}
+
+#stage {
+    position: relative;
+    width: 100%; /* Збільшена ширина */
+    height: 700px;
+    margin: 0 auto; /* Центрування контейнера */
+    background: #f0f0f0; /* Фон для наочності */
+}
+
+#doll {
+    position: absolute;
+    left: 100px; /* Лялька ліворуч */
+    top: 50px;
+}
